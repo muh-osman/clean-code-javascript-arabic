@@ -29,7 +29,7 @@
 ## المقدمة
 
 ![Humorous image of software quality estimation as a count of how many expletives
-you shout when reading code](https://raw.githubusercontent.com/muh-osman/clean-code-javascript-arabic/master/image.jpg)
+you shout when reading code](https://raw.githubusercontent.com/muh-osman/clean-code-javascript-arabic/main/image.jpg)
 
 مبادئ هندسة البرمجيات ، من كتاب روبرت سي مارتن [_Clean Code_](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882) ،
 تم تكييفها مع JavaScript. هذا ليس دليل لأسلوب كتابة الكود. بل دليل لإنتاج
@@ -1807,20 +1807,13 @@ getdata()
 
 ## **التنسيق**
 
-Formatting is subjective. Like many rules herein, there is no hard and fast
-rule that you must follow. The main point is DO NOT ARGUE over formatting.
-There are [tons of tools](https://standardjs.com/rules.html) to automate this.
-Use one! It's a waste of time and money for engineers to argue over formatting.
+تنسيق الكود هو امر شخصي. مثل العديد من القواعد الواردة هنا، لا توجد قاعدة صارمة وسريعة يجب عليك اتباعها. النقطة الأساسية هي عدم الجدال حول التنسيق. هناك [الكثير من الأدوات](https://standardjs.com/rules.html) لأتمتة هذا. استخدم واحدة! الجدل حول التنسيق يعد مضيعة للوقت والمال.
 
-For things that don't fall under the purview of automatic formatting
-(indentation, tabs vs. spaces, double vs. single quotes, etc.) look here
-for some guidance.
+بالنسبة للأشياء التي لا تقع ضمن نطاق التنسيق التلقائي (المسافة البادئة ، tabs vs. spaces، علامات الاقتباس المزدوجة مقابل علامات الاقتباس المفردة ، إلخ) ، ابحث هنا عن بعض الإرشادات.
 
 ### #41 اكتب بأحرف كبيرة وبطريقة متسقة
 
-JavaScript is untyped, so capitalization tells you a lot about your variables,
-functions, etc. These rules are subjective, so your team can choose whatever
-they want. The point is, no matter what you all choose, just be consistent.
+تعد JavaScript لغة غير مطبوع (untyped)، لذا فإن الكتابة بالأحرف الكبيرة تخبرك كثيرًا عن المتغيرات والـ functions وما إلى ذلك. هذه القواعد شخصية، لذا يمكن لفريقك اختيار ما يريده. النقطة المهمة هي، بغض النظر عما تختاروه جميعًا ، فقط كن متسقًا.
 
 **Bad⛔:**
 
@@ -1854,11 +1847,9 @@ class Animal {}
 class Alpaca {}
 ```
 
-### #42 Function callers and callees should be close
+### #42 يجب على الـ Function التي تستدعي أخرى أن تكون قريبة منها
 
-If a function calls another, keep those functions vertically close in the source
-file. Ideally, keep the caller right above the callee. We tend to read code from
-top-to-bottom, like a newspaper. Because of this, make your code read that way.
+إذا استدعت دالة دالة أخرى ، ابقي هذه الـ functions قريبة من بعضها البعض عموديًا في الملف المصدر. من الناحية المثالية ، احتفظ بالمستدعي فوق المستدعى مباشرةً. نميل إلى قراءة التعليمات البرمجية من أعلى إلى أسفل ، مثل الجريدة. لهذا السبب ، اجعل الكود الخاص بك يقرأ بهذه الطريقة.
 
 **Bad⛔:**
 
